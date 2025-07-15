@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Threads - Product Collections</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font for a more elegant look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F0F5; /* A very light shade for background, close to muted lavender */
+        }
+        /* Custom color palette */
+        .deep-rose-pink { background-color: #D94F70; } /* Deep Rose Pink */
+        .muted-lavender { background-color: #B497BD; } /* Muted Lavender */
+        .berry-red { background-color: #B22234; } /* Berry Red / Crimson */
+        .dusty-mauve-purple { background-color: #A267AC; } /* Dusty Mauve Purple */
+        .text-deep-rose-pink { color: #D94F70; }
+        .text-muted-lavender { color: #E6E6FA; } /* Changed to a lighter lavender for better contrast with berry-red text */
+        .text-berry-red { color: #B22234; }
+        .text-dusty-mauve-purple { color: #A267AC; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-berry-red text-muted-lavender p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold flex items-center">
+                <i data-lucide="shopping-bag" class="w-8 h-8 mr-2 text-deep-rose-pink"></i>
+                Elegance Threads
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#home" class="hover:text-deep-rose-pink transition duration-300">Home</a></li>
+                    <li><a href="#shirts" class="hover:text-deep-rose-pink transition duration-300">Shirts</a></li>
+                    <li><a href="#kurti-sets" class="hover:text-deep-rose-pink transition duration-300">Kurti Sets</a></li>
+                    <li><a href="#sarees" class="hover:text-deep-rose-pink transition duration-300">Sarees</a></li>
+                    <li><a href="#pants" class="hover:text-deep-rose-pink transition duration-300">Pants</a></li>
+                    <li><a href="#tops" class="hover:text-deep-rose-pink transition duration-300">Tops</a></li>
+                    <li><a href="#accessories" class="hover:text-deep-rose-pink transition duration-300">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Product Collections -->
+    <main class="py-16 px-4 sm:px-6 lg:px-8" style="background-color: #F8F0F5;">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-berry-red mb-6 flex items-center justify-center">
+                <i data-lucide="gallery-vertical" class="w-10 h-10 mr-3 text-deep-rose-pink"></i>
+                Our Detailed Collections
+            </h2>
+
+            <!-- Quote Section -->
+            <blockquote class="text-xl italic text-gray-800 border-l-4 border-deep-rose-pink pl-4 mb-12 text-center">
+                "Style is a way to say who you are without having to speak." <br> <span class="font-semibold">- Rachel Zoe</span>
+            </blockquote>
+
+            <!-- Shirts Collection -->
+            <section id="shirts" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="shirt" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Chic Shirts Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://trendarrest.com/cdn/shop/products/16-12-2022_Emeline_04793.jpg?v=1749800344" alt="Classic White Shirt" class="w-full h-64 object-cover" id="shirt1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="shirt1-name">Classic White Shirt</h4>
+                            <p class="text-gray-700 mb-2">A timeless piece for effortless elegance. Perfect for office or casual wear.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="shirt1-price">Price: ₹350</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Classic%20White%20Shirt&price=350&image=https%3A%2F%2Ftrendarrest.com%2Fcdn%2Fshop%2Fproducts%2F16-12-2022_Emeline_04793.jpg%3Fv%3D1749800344" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://image.uniqlo.com/UQ/ST3/in/imagesgoods/475648/item/ingoods_61_475648_3x4.jpg?width=288" alt="Striped Linen Shirt" class="w-full h-64 object-cover" id="shirt2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="shirt2-name">Striped Linen Shirt</h4>
+                            <p class="text-gray-700 mb-2">Lightweight and breathable, ideal for a chic summer look.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="shirt2-price">Price: ₹420</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Striped%20Linen%20Shirt&price=420&image=https%3A%2F%2Fimage.uniqlo.com%2FUQ%2FST3%2Fin%2Fimagesgoods%2F475648%2Fitem%2Fingoods_61_475648_3x4.jpg%3Fwidth%3D288" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more shirt products here -->
+                </div>
+            </section>
+
+            <!-- Kurti Sets Collection -->
+            <section id="kurti-sets" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="t-shirt" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Elegant Kurti Sets Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://reyantra.com/uploads/products/3649//19ee203f0229aae4b91567bff25442e5.webp" alt="Embroidered Kurti Set" class="w-full h-64 object-cover" id="kurti1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="kurti1-name">Embroidered Kurti Set</h4>
+                            <p class="text-gray-700 mb-2">Intricately designed kurti with matching pants and dupatta for festive occasions.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="kurti1-price">Price: ₹480</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Embroidered%20Kurti%20Set&price=480&image=https%3A%2F%2Freyantra.com%2Fuploads%2Fproducts%2F3649%2F%2F19ee203f0229aae4b91567bff25442e5.webp" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://ekantastudio.com/cdn/shop/products/narayanpet-cotton-kurtis.jpg?v=1747396262" alt="Casual Cotton Kurti Set" class="w-full h-64 object-cover" id="kurti2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="kurti2-name">Casual Cotton Kurti Set</h4>
+                            <p class="text-gray-700 mb-2">Comfortable and stylish, perfect for daily wear or casual outings.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="kurti2-price">Price: ₹390</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Casual%20Cotton%20Kurti%20Set&price=390&image=https%3A%2F%2Fekantastudio.com%2Fcdn%2Fshop%2Fproducts%2Fnarayanpet-cotton-kurtis.jpg%3Fv%3D1747396262" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more kurti set products here -->
+                </div>
+            </section>
+
+            <!-- Sarees Collection -->
+            <section id="sarees" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="gem" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Timeless Sarees Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://www.royalexport.in/product-img/luxurious-red-designer-heavy-j-1744351958.jpg" alt="Silk Saree" class="w-full h-64 object-cover" id="saree1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="saree1-name">Luxurious Silk Saree</h4>
+                            <p class="text-gray-700 mb-2">Handwoven silk saree with intricate pallu, ideal for weddings and grand events.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="saree1-price">Price: ₹490</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Luxurious%20Silk%20Saree&price=490&image=https%3A%2F%2Fwww.royalexport.in%2Fproduct-img%2Fluxurious-red-designer-heavy-j-1744351958.jpg" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://www.koskii.com/cdn/shop/files/koskii-pink-printed-georgette-designer-saree-saus0038902_pink_1_4.jpg?v=1748424986" alt="Georgette Saree" class="w-full h-64 object-cover" id="saree2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="saree2-name">Lightweight Georgette Saree</h4>
+                            <p class="text-gray-700 mb-2">Flowy and comfortable georgette saree, perfect for casual gatherings.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="saree2-price">Price: ₹320</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Lightweight%20Georgette%20Saree&price=320&image=https%3A%2F%2Fwww.koskii.com%2Fcdn%2Fshop%2Ffiles%2Fkoskii-pink-printed-georgette-designer-saree-saus0038902_pink_1_4.jpg%3Fv%3D1748424986" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more saree products here -->
+                </div>
+            </section>
+
+            <!-- Pants Collection -->
+            <section id="pants" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="chevrons-down-up" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Comfortable Pants Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://img.kwcdn.com/product/fancy/8e46c5e8-5d2f-4ce1-b025-e9f2d3247795.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Wide Leg Pants" class="w-full h-64 object-cover" id="pant1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="pant1-name">Stylish Wide-Leg Pants</h4>
+                            <p class="text-gray-700 mb-2">Trendy and comfortable wide-leg pants for a relaxed yet chic look.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="pant1-price">Price: ₹280</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Stylish%20Wide-Leg%20Pants&price=280&image=https%3A%2F%2Fimg.kwcdn.com%2Fproduct%2Ffancy%2F8e46c5e8-5d2f-4ce1-b025-e9f2d3247795.jpg%3FimageMogr2%2Fauto-orient%257CimageView2%2F2%2Fw%2F800%2Fq%2F70%2Fformat%2Fwebp" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://www.lynoakes.co.uk/pub/media/catalog/product/cache/5f29d58ea9fd92ca9b23d92d76647485/k/i/king_trousers_lyn_oakes.jpeg" alt="Slim Fit Trousers" class="w-full h-64 object-cover" id="pant2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="pant2-name">Classic Slim-Fit Trousers</h4>
+                            <p class="text-gray-700 mb-2">Versatile trousers perfect for formal or semi-formal occasions.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="pant2-price">Price: ₹370</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Classic%20Slim-Fit%20Trousers&price=370&image=https%3A%2F%2Fwww.lynoakes.co.uk%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5f29d58ea9fd92ca9b23d92d76647485%2Fk%2Fi%2Fking_trousers_lyn_oakes.jpeg" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more pant products here -->
+                </div>
+            </section>
+
+            <!-- Tops Collection -->
+            <section id="tops" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="crop" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Trendy Tops Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PngFHVHzguZMNLUXLggGIiKPe2ufWDliaBSuFhWFJ8VBHt8E1FfeUMy8nhI759z2kxQ&usqp=CAU" alt="Floral Blouse" class="w-full h-64 object-cover" id="top1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="top1-name">Charming Floral Blouse</h4>
+                            <p class="text-gray-700 mb-2">A vibrant floral blouse, perfect for a fresh and feminine look.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="top1-price">Price: ₹250</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Charming%20Floral%20Blouse&price=250&image=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcR7PngFHVHzguZMNLUXLggGIiKPe2ufWDliaBSuFhWFJ8VBHt8E1FfeUMy8nhI759z2kxQ%26usqp%3DCAU" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://i.etsystatic.com/9333205/r/il/4e3433/2452446019/il_570xN.2452446019_odpv.jpg" alt="Knitted Top" class="w-full h-64 object-cover" id="top2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="top2-name">Cozy Knitted Top</h4>
+                            <p class="text-gray-700 mb-2">Soft and comfortable knitted top, ideal for cooler weather.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="top2-price">Price: ₹310</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Cozy%20Knitted%20Top&price=310&image=https%3A%2F%2Fi.etsystatic.com%2F9333205%2Fr%2Fil%2F4e3433%2F2452446019%2Fil_570xN.2452446019_odpv.jpg" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more top products here -->
+                </div>
+            </section>
+
+            <!-- Accessories Collection -->
+            <section id="accessories" class="mb-16">
+                <h3 class="text-3xl font-bold text-deep-rose-pink mb-8 border-b-2 border-deep-rose-pink pb-2 flex items-center">
+                    <i data-lucide="gem" class="w-8 h-8 mr-2 text-berry-red"></i>
+                    Chic Accessories Collection
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://images.meesho.com/images/products/337906289/1u3jp_512.webp" alt="Statement Necklace" class="w-full h-64 object-cover" id="accessory1-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="accessory1-name">Elegant Statement Necklace</h4>
+                            <p class="text-gray-700 mb-2">Add a touch of glamour with our exquisite statement necklaces.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="accessory1-price">Price: ₹200</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Elegant%20Statement%20Necklace&price=200&image=https%3A%2F%2Fimages.meesho.com%2Fimages%2Fproducts%2F337906289%2F1u3jp_512.webp" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden">
+                        <img src="https://images.fashiontiy.com/products/T103D1731F/color_0.jpg?x-oss-process=image/interlace,1/format,webp" alt="Leather Handbag" class="w-full h-64 object-cover" id="accessory2-img">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold text-berry-red mb-2" id="accessory2-name">Stylish Leather Handbag</h4>
+                            <p class="text-gray-700 mb-2">A sophisticated leather handbag, perfect for everyday essentials.</p>
+                            <p class="text-lg font-bold text-berry-red mb-4" id="accessory2-price">Price: ₹450</p>
+                            <div class="flex space-x-4">
+                                <button class="flex-1 bg-dusty-mauve-purple text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-berry-red hover:text-white transition duration-300">Add to Cart</button>
+                                <a href="buy-now-page.html?name=Stylish%20Leather%20Handbag&price=450&image=https%3A%2F%2Fimages.fashiontiy.com%2Fproducts%2FT103D1731F%2Fcolor_0.jpg%3Fx-oss-process%3Dimage%2Finterlace%2C1%2Fformat%2Cwebp" class="flex-1 text-center bg-berry-red text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-deep-rose-pink hover:text-white transition duration-300">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more accessory products here -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-berry-red text-muted-lavender p-8 mt-16 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Elegance Threads. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initializes Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
