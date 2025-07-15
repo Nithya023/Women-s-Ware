@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Threads - Women's Wear</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font for a more elegant look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F0F5; /* A very light shade for background, close to muted lavender */
+        }
+        /* Custom color palette */
+        .deep-rose-pink { background-color: #D94F70; } /* Deep Rose Pink */
+        .muted-lavender { background-color: #B497BD; } /* Muted Lavender */
+        .berry-red { background-color: #B22234; } /* Berry Red / Crimson */
+        .dusty-mauve-purple { background-color: #A267AC; } /* Dusty Mauve Purple */
+        .text-deep-rose-pink { color: #D94F70; }
+        .text-muted-lavender { color: #B497BD; }
+        .text-berry-red { color: #B22234; }
+        .text-dusty-mauve-purple { color: #A267AC; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-berry-red text-muted-lavender p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold flex items-center">
+                <i data-lucide="sparkles" class="w-8 h-8 mr-2 text-deep-rose-pink"></i>
+                Elegance Threads
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-deep-rose-pink transition duration-300">Home</a></li>
+                    <li><a href="#products" class="hover:text-deep-rose-pink transition duration-300">Products</a></li>
+                    <li><a href="#about" class="hover:text-deep-rose-pink transition duration-300">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-deep-rose-pink transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="home" class="relative overflow-hidden bg-dusty-mauve-purple py-20 px-4 sm:px-6 lg:px-8 rounded-lg shadow-lg m-4">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+            <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+                <h2 class="text-5xl font-extrabold text-berry-red leading-tight mb-6">
+                    Discover Your <span class="text-deep-rose-pink">Signature Style</span>
+                </h2>
+                <p class="text-lg text-gray-700 mb-4 max-w-lg mx-auto lg:mx-0">
+                    Welcome to Elegance Threads, where timeless fashion meets contemporary design. Explore our curated collection of <span class="font-semibold text-berry-red">women's wear</span>, crafted to empower your <span class="font-semibold text-deep-rose-pink">grace and confidence</span>. From everyday chic to special occasion elegance, find pieces that resonate with your unique spirit.
+                </p>
+                <blockquote class="text-md italic text-gray-800 border-l-4 border-deep-rose-pink pl-4 mb-8 max-w-lg mx-auto lg:mx-0">
+                    "Fashion is what you buy. Style is what you do with it." <br> <span class="font-semibold">- Eleanor Roosevelt</span>
+                </blockquote>
+                <a href="#products" class="inline-block bg-deep-rose-pink text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-muted-lavender hover:text-black transition duration-300 shadow-lg">
+                    Shop Now
+                </a>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <!-- Placeholder image for the intro section -->
+                <img src="https://en.pimg.jp/106/506/668/1/106506668.jpg" alt="Fashion Model" class="rounded-xl shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 px-4 sm:px-6 lg:px-8" style="background-color: #F8F0F5;">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center text-berry-red mb-12">Our Collection</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Product Card: Shirt -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/21/11/best-white-shirts.jpg?width=1200" alt="Women's Shirt" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Chic Shirts</h4>
+                        <p class="text-gray-600 mb-4">Elevate your everyday style with our collection of versatile and fashionable shirts.</p>
+                        <a href="product-collections-page.html#shirts" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card: Kurti Set -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://images.jdmagicbox.com/quickquotes/images_main/-3wn59ry4.jpg" alt="Women's Kurti Set" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Elegant Kurti Sets</h4>
+                        <p class="text-gray-600 mb-4">Discover comfort and grace with our beautifully designed kurti sets, perfect for any occasion.</p>
+                        <a href="product-collections-page.html#kurti-sets" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card: Saree -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://ekktara.com/cdn/shop/files/rn-image_picker_lib_temp_bb2c7a2d-e2f0-4105-a963-f7ad4128c72c.jpg?v=1704897941&width=1946" alt="Women's Saree" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Timeless Sarees</h4>
+                        <p class="text-gray-600 mb-4">Adorn yourself in the timeless beauty of our exquisite saree collection.</p>
+                        <a href="product-collections-page.html#sarees" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card: Pants -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://naariy.com/cdn/shop/products/Beige_Solid_Women_Regular_Fit_Cotton_Trouser_Stylish_Look_For_Women.png?v=1742296710&width=1445" alt="Women's Pants" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Comfortable Pants</h4>
+                        <p class="text-gray-600 mb-4">Find your perfect fit with our range of stylish and comfortable pants for every silhouette.</p>
+                        <a href="product-collections-page.html#pants" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card: Tops -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://shaye.co.in/cdn/shop/files/2K877S24-1_533x.jpg?v=1720074346" alt="Women's Tops" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Trendy Tops</h4>
+                        <p class="text-gray-600 mb-4">Stay on trend with our diverse selection of tops, perfect for any outfit.</p>
+                        <a href="product-collections-page.html#tops" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Product Card: Accessories (Optional, added for completeness) -->
+                <div class="bg-muted-lavender rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://www.shutterstock.com/image-photo/mock-blank-empty-smart-phone-260nw-1535780054.jpg" alt="Fashion Accessories" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-2xl font-semibold text-berry-red mb-2">Chic Accessories</h4>
+                        <p class="text-gray-600 mb-4">Complete your look with our elegant range of accessories.</p>
+                        <a href="product-collections-page.html#accessories" class="w-full inline-block text-center bg-deep-rose-pink text-deep-rose-pink py-3 rounded-lg font-medium hover:bg-dusty-mauve-purple transition duration-300">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-berry-red text-muted-lavender p-8 mt-16 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Elegance Threads. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initializes Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
