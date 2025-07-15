@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Threads - Buy Now</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font for a more elegant look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F0F5; /* A very light shade for background, close to muted lavender */
+        }
+        /* Custom color palette */
+        .deep-rose-pink { background-color: #D94F70; } /* Deep Rose Pink */
+        .muted-lavender { background-color: #B497BD; } /* Muted Lavender */
+        .berry-red { background-color: #B22234; } /* Berry Red / Crimson */
+        .dusty-mauve-purple { background-color: #A267AC; } /* Dusty Mauve Purple */
+        .text-deep-rose-pink { color: #D94F70; }
+        .text-muted-lavender { color: #E6E6FA; }
+        .text-berry-red { color: #B22234; }
+        .text-dusty-mauve-purple { color: #A267AC; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-berry-red text-muted-lavender p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold flex items-center">
+                <i data-lucide="shopping-bag" class="w-8 h-8 mr-2 text-berry-red"></i>
+                Elegance Threads
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#home" class="hover:text-deep-rose-pink transition duration-300">Home</a></li>
+                    <li><a href="product-collections-page.html" class="hover:text-deep-rose-pink transition duration-300">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Buy Now Page -->
+    <main class="py-16 px-4 sm:px-6 lg:px-8" style="background-color: #F8F0F5;">
+        <div class="container mx-auto max-w-4xl bg-muted-lavender rounded-xl shadow-xl p-8">
+            <h2 class="text-4xl font-bold text-center text-berry-red mb-10">Complete Your Purchase</h2>
+
+            <!-- Quote Section -->
+            <blockquote class="text-xl italic text-gray-800 border-l-4 border-deep-rose-pink pl-4 mb-8 text-center">
+                "The joy of dressing is an art." <br> <span class="font-semibold">- John Galliano</span>
+            </blockquote>
+
+            <!-- Delivery Information Section -->
+            <div class="mb-12 border-b-2 border-deep-rose-pink pb-8 text-center">
+                <p class="text-lg text-gray-800 flex items-center justify-center">
+                    <i data-lucide="truck" class="w-6 h-6 mr-2 text-berry-red"></i>
+                    Estimated Delivery: <span class="font-semibold text-deep-rose-pink ml-2">Within 3-5 business days</span>
+                </p>
+            </div>
+
+            <!-- Customer Information Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-berry-red mb-6 flex items-center">
+                    <i data-lucide="user" class="w-6 h-6 mr-2 text-deep-rose-pink"></i>
+                    Your <span class="text-deep-rose-pink ml-1">Information</span>
+                </h3>
+                <div class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label for="fullName" class="block text-gray-700 text-sm font-bold mb-2 flex items-center">
+                            <i data-lucide="user-plus" class="w-4 h-4 mr-2 text-dusty-mauve-purple"></i>
+                            Full Name:
+                        </label>
+                        <input type="text" id="fullName" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-deep-rose-pink" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="address" class="block text-gray-700 text-sm font-bold mb-2 flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-2 text-dusty-mauve-purple"></i>
+                            Shipping Address:
+                        </label>
+                        <textarea id="address" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-deep-rose-pink" rows="3" placeholder="Enter your shipping address"></textarea>
+                    </div>
+                    <div>
+                        <label for="phoneNumber" class="block text-gray-700 text-sm font-bold mb-2 flex items-center">
+                            <i data-lucide="phone" class="w-4 h-4 mr-2 text-dusty-mauve-purple"></i>
+                            Phone Number:
+                        </label>
+                        <input type="tel" id="phoneNumber" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-deep-rose-pink" placeholder="Enter your phone number">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Options Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-berry-red mb-6 flex items-center">
+                    <i data-lucide="credit-card" class="w-6 h-6 mr-2 text-deep-rose-pink"></i>
+                    Select <span class="text-deep-rose-pink ml-1">Payment Method</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <label class="flex items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:bg-gray-50 transition duration-200">
+                        <input type="radio" name="payment-method" value="gpay" class="form-radio h-5 w-5 text-deep-rose-pink" checked>
+                        <span class="ml-3 text-lg font-medium text-gray-800 flex items-center">
+                            GPay <i data-lucide="wallet" class="w-5 h-5 ml-2 text-green-500"></i>
+                        </span>
+                    </label>
+                    <label class="flex items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:bg-gray-50 transition duration-200">
+                        <input type="radio" name="payment-method" value="phonepe" class="form-radio h-5 w-5 text-deep-rose-pink">
+                        <span class="ml-3 text-lg font-medium text-gray-800 flex items-center">
+                            PhonePe <i data-lucide="smartphone" class="w-5 h-5 ml-2 text-purple-500"></i>
+                        </span>
+                    </label>
+                    <label class="flex items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:bg-gray-50 transition duration-200">
+                        <input type="radio" name="payment-method" value="paytm" class="form-radio h-5 w-5 text-deep-rose-pink">
+                        <span class="ml-3 text-lg font-medium text-gray-800 flex items-center">
+                            Paytm <i data-lucide="scan" class="w-5 h-5 ml-2 text-blue-500"></i>
+                        </span>
+                    </label>
+                    <label class="flex items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:bg-gray-50 transition duration-200">
+                        <input type="radio" name="payment-method" value="cod" class="form-radio h-5 w-5 text-deep-rose-pink">
+                        <span class="ml-3 text-lg font-medium text-gray-800 flex items-center">
+                            Cash on Delivery <i data-lucide="package" class="w-5 h-5 ml-2 text-gray-600"></i>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pay Button -->
+            <button id="payButton" class="w-full bg-deep-rose-pink text-berry-red py-4 rounded-lg text-xl font-semibold hover:bg-berry-red transition duration-300 shadow-lg">
+                Pay Now
+            </button>
+
+            <!-- Thank You Message -->
+            <div id="thankYouMessage" class="hidden mt-8 p-6 bg-green-100 text-green-800 rounded-lg text-center shadow-md">
+                <p class="text-2xl font-bold mb-2">Thank You for Your Purchase!</p>
+                <p class="text-lg">Your order has been placed successfully and will be delivered soon.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-berry-red text-muted-lavender p-8 mt-16 rounded-t-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Elegance Threads. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-deep-rose-pink transition duration-300">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('payButton').addEventListener('click', function() {
+                // In a real application, you would validate inputs and process payment here.
+                // For this example, we just show the thank you message.
+                document.getElementById('thankYouMessage').classList.remove('hidden');
+            });
+            // Initializes Lucide icons
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
